@@ -5,17 +5,17 @@ use DB_MiniMercado_los_Pacos;
 
 
 /*---------------------------------------------------------  TABLAS  ---------------------------------------------------------------*/
-Create table ROL(
+Create table Rol(
 ID_rol int not null,
 nombre_rol varchar(50) not null,
 Primary key (ID_rol)
 );
 
 
-Create table USUARIO(
+Create table Usuario(
 ID_user bigint not null,				-- tarjeta de indentidad(Cedula de Ciudadania) 
 nombre_user varchar (50) NOT null,			-- nombre del Usuario
-Apellido_user varchar (50)null,			-- Apellido del Usuario
+apellido_user varchar (50)null,			-- Apellido del Usuario
 telefono_user bigint not null,			-- Numero del telefono selular
 correo varchar (50) default null,		-- Correo electronico 
 contrasenia varchar (150) not null,		-- Contrasenia de la cuenta de usuario
@@ -26,7 +26,7 @@ constraint FK_ROL foreign key (ID_rol) references ROL (ID_rol)
 );
 
 
-Create table PRODUCTO(
+Create table Producto(
 ID_producto int not null,
 codi_barras bigint default null,
 nombre_producto varchar (50) not null,
@@ -43,10 +43,10 @@ ID_pedido int not null auto_increment,
 ID_producto int not null,
 ID_user bigInt not null,
 total_compra decimal not null,
-total_Descuento decimal not null,
-cantidad_productos int NOT null,
-Fecha_Compra datetime not null,
-Hora_compra time not null,
+total_descuento decimal not null,
+cantidad_productos decimal NOT null,
+fecha_compra datetime not null,
+hora_compra time not null,
 primary key (ID_pedido),
 constraint FK_PRODUCTO Foreign key (ID_producto) references PRODUCTO (ID_producto),
 constraint FK_USUARIO foreign key (ID_user) references USUARIO(ID_user)
