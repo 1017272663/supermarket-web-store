@@ -28,7 +28,7 @@ constraint FK_ROL foreign key (ID_rol) references ROL (ID_rol)
 
 Create table Producto(
 ID_producto int not null,
-codi_barras bigint default null,
+codigo_barras bigint default null,
 nombre_producto varchar (50) not null,
 descripcion_producto varchar (200) default null,
 Imagen_producto Varchar (250) null,

@@ -1,10 +1,15 @@
 package com.minimercadolospacos.webminimercadolospacos.models.entity;
 
+import java.time.LocalDate;
+import java.time.LocalTime;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 
@@ -17,10 +22,12 @@ public class Compra {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int idPedido;
     
-    @Column(name="ID_producto")
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name="ID_producto")
     private int idProducto;
         
-    @Column(name="ID_user")
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name="ID_user")
     private long idUser;
                 
     @Column(name="total_compra")
@@ -33,10 +40,126 @@ public class Compra {
     private long cantidadProductos;
     
     @Column(name="fecha_compra")
-    private  java.sql.Date  fechaCompra;
+    private  LocalDate  fechaCompra;
     
       @Column(name="hora_compra")
-    private java.sql.Time horaCompra;
+    private LocalTime horaCompra;
       
-      /*java.sql.Timestamp – Fecha y hora*/
+      /*
+      java.sql.Date -Fecha
+      java.sql.Time - Hora
+      java.sql.Timestamp – Fecha y hora
+      LocalDateTime - Fecha y Hora*/
+
+    /**
+     * @return the idPedido
+     */
+    public int getIdPedido() {
+        return idPedido;
+    }
+
+    /**
+     * @param idPedido the idPedido to set
+     */
+    public void setIdPedido(int idPedido) {
+        this.idPedido = idPedido;
+    }
+
+    /**
+     * @return the idProducto
+     */
+    public int getIdProducto() {
+        return idProducto;
+    }
+
+    /**
+     * @param idProducto the idProducto to set
+     */
+    public void setIdProducto(int idProducto) {
+        this.idProducto = idProducto;
+    }
+
+    /**
+     * @return the idUser
+     */
+    public long getIdUser() {
+        return idUser;
+    }
+
+    /**
+     * @param idUser the idUser to set
+     */
+    public void setIdUser(long idUser) {
+        this.idUser = idUser;
+    }
+
+    /**
+     * @return the totalCompra
+     */
+    public long getTotalCompra() {
+        return totalCompra;
+    }
+
+    /**
+     * @param totalCompra the totalCompra to set
+     */
+    public void setTotalCompra(long totalCompra) {
+        this.totalCompra = totalCompra;
+    }
+
+    /**
+     * @return the totalDescuento
+     */
+    public long getTotalDescuento() {
+        return totalDescuento;
+    }
+
+    /**
+     * @param totalDescuento the totalDescuento to set
+     */
+    public void setTotalDescuento(long totalDescuento) {
+        this.totalDescuento = totalDescuento;
+    }
+
+    /**
+     * @return the cantidadProductos
+     */
+    public long getCantidadProductos() {
+        return cantidadProductos;
+    }
+
+    /**
+     * @param cantidadProductos the cantidadProductos to set
+     */
+    public void setCantidadProductos(long cantidadProductos) {
+        this.cantidadProductos = cantidadProductos;
+    }
+
+    /**
+     * @return the fechaCompra
+     */
+    public LocalDate getFechaCompra() {
+        return fechaCompra;
+    }
+
+    /**
+     * @param fechaCompra the fechaCompra to set
+     */
+    public void setFechaCompra(LocalDate fechaCompra) {
+        this.fechaCompra = fechaCompra;
+    }
+
+    /**
+     * @return the horaCompra
+     */
+    public LocalTime getHoraCompra() {
+        return horaCompra;
+    }
+
+    /**
+     * @param horaCompra the horaCompra to set
+     */
+    public void setHoraCompra(LocalTime horaCompra) {
+        this.horaCompra = horaCompra;
+    }
 }

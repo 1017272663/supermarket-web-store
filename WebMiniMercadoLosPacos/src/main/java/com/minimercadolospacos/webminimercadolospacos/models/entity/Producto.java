@@ -8,17 +8,15 @@ import javax.persistence.Table;
 
 
 @Entity
-@Table(name = "PRODUCTO")
+@Table(name = "Producto")
 public class Producto {
         
     @Id
     @Column(name="ID_producto")
     private int idProducto;
-    
-      
-    @Column(name="codi_barras")
-    private long codiBarras;
-        
+       
+    @Column(name="codigo_barras")
+    private long codigoBarras;   
          
     @Column(name="nombre_producto")
     private String nombreProducto;
@@ -50,17 +48,17 @@ public class Producto {
     }
 
     /**
-     * @return the codiBarras
+     * @return the codigoBarras
      */
-    public long getCodiBarras() {
-        return codiBarras;
+    public long getCodigoBarras() {
+        return codigoBarras;
     }
 
     /**
-     * @param codiBarras the codiBarras to set
+     * @param codigoBarras the codigoBarras to set
      */
-    public void setCodiBarras(long codiBarras) {
-        this.codiBarras = codiBarras;
+    public void setCodigoBarras(long codigoBarras) {
+        this.codigoBarras = codigoBarras;
     }
 
     /**
@@ -132,5 +130,6 @@ public class Producto {
     public void setCantidadProducto(int cantidadProducto) {
         this.cantidadProducto = cantidadProducto;
     }
-                
+    
+    
 }
