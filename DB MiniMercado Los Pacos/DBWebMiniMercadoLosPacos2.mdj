@@ -3806,6 +3806,21 @@
 												},
 												{
 													"_type": "ERDColumnView",
+													"_id": "AAAAAAF1AyTSgTfNeXU=",
+													"_parent": {
+														"$ref": "AAAAAAF039eHE032InE="
+													},
+													"model": {
+														"$ref": "AAAAAAF1AyTR6zfKFZw="
+													},
+													"font": "Arial;13;0",
+													"left": 485,
+													"top": 1003,
+													"width": 231,
+													"height": 13
+												},
+												{
+													"_type": "ERDColumnView",
 													"_id": "AAAAAAF039giiU4Nkis=",
 													"_parent": {
 														"$ref": "AAAAAAF039eHE032InE="
@@ -3815,7 +3830,7 @@
 													},
 													"font": "Arial;13;0",
 													"left": 485,
-													"top": 1003,
+													"top": 1018,
 													"width": 231,
 													"height": 13
 												},
@@ -3830,7 +3845,7 @@
 													},
 													"font": "Arial;13;0",
 													"left": 485,
-													"top": 1018,
+													"top": 1033,
 													"width": 231,
 													"height": 13
 												},
@@ -3845,7 +3860,7 @@
 													},
 													"font": "Arial;13;0",
 													"left": 485,
-													"top": 1033,
+													"top": 1048,
 													"width": 231,
 													"height": 13
 												},
@@ -3860,7 +3875,7 @@
 													},
 													"font": "Arial;13;0",
 													"left": 485,
-													"top": 1048,
+													"top": 1063,
 													"width": 231,
 													"height": 13
 												}
@@ -3869,7 +3884,7 @@
 											"left": 480,
 											"top": 983,
 											"width": 241,
-											"height": 83
+											"height": 98
 										}
 									],
 									"font": "Arial;13;0",
@@ -4549,6 +4564,16 @@
 								},
 								{
 									"_type": "ERDColumn",
+									"_id": "AAAAAAF1AyTR6zfKFZw=",
+									"_parent": {
+										"$ref": "AAAAAAF039eHEk3yPls="
+									},
+									"name": "codigo_barras",
+									"length": 0,
+									"nullable": true
+								},
+								{
+									"_type": "ERDColumn",
 									"_id": "AAAAAAF039ghRk4KCFE=",
 									"_parent": {
 										"$ref": "AAAAAAF039eHEk3yPls="
@@ -4565,7 +4590,8 @@
 									},
 									"name": "descripcion_producto",
 									"type": "varchar",
-									"length": 0
+									"length": 0,
+									"nullable": true
 								},
 								{
 									"_type": "ERDColumn",
@@ -4575,7 +4601,8 @@
 									},
 									"name": "Imagen_producto",
 									"type": "Varchar",
-									"length": 0
+									"length": 0,
+									"nullable": true
 								},
 								{
 									"_type": "ERDColumn",
@@ -4626,7 +4653,8 @@
 									},
 									"name": "Apellido_user",
 									"type": "varchar",
-									"length": 0
+									"length": 0,
+									"nullable": true
 								},
 								{
 									"_type": "ERDColumn",
@@ -4646,7 +4674,8 @@
 									},
 									"name": "correo",
 									"type": "varchar",
-									"length": 0
+									"length": 0,
+									"nullable": true
 								},
 								{
 									"_type": "ERDColumn",
