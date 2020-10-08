@@ -1,4 +1,5 @@
 package com.minimercadolospacos.webminimercadolospacos.models.entity;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -10,7 +11,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "Usuario")
-public class Usuario {
+public class Usuario{
     
     @Id
     @Column(name="ID_user")
