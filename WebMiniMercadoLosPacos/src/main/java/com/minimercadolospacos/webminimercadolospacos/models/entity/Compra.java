@@ -14,22 +14,15 @@ import javax.persistence.Table;
 
 
 @Entity
-@Table(name = "Compra")
+@Table(name = "compra")
 public class Compra {
       
     @Id
-    @Column(name="ID_pedido")
+    @Column(name="pedido_id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int idPedido;
+    private int id;
     
-    @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name="ID_producto")
-    private int idProducto;
-        
-    @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name="ID_user")
-    private long idUser;
-                
+               
     @Column(name="total_compra")
     private long totalCompra;
              
@@ -44,53 +37,32 @@ public class Compra {
     
       @Column(name="hora_compra")
     private LocalTime horaCompra;
-      
+         
       /*
       java.sql.Date -Fecha
       java.sql.Time - Hora
       java.sql.Timestamp – Fecha y hora
       LocalDateTime - Fecha y Hora*/
+   @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name="producto_id")
+    private int idProducto;
+        
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name="user_id")
+    private long idUser;
 
     /**
-     * @return the idPedido
+     * @return the id
      */
-    public int getIdPedido() {
-        return idPedido;
+    public int getId() {
+        return id;
     }
 
     /**
-     * @param idPedido the idPedido to set
+     * @param id the id to set
      */
-    public void setIdPedido(int idPedido) {
-        this.idPedido = idPedido;
-    }
-
-    /**
-     * @return the idProducto
-     */
-    public int getIdProducto() {
-        return idProducto;
-    }
-
-    /**
-     * @param idProducto the idProducto to set
-     */
-    public void setIdProducto(int idProducto) {
-        this.idProducto = idProducto;
-    }
-
-    /**
-     * @return the idUser
-     */
-    public long getIdUser() {
-        return idUser;
-    }
-
-    /**
-     * @param idUser the idUser to set
-     */
-    public void setIdUser(long idUser) {
-        this.idUser = idUser;
+    public void setId(int id) {
+        this.id = id;
     }
 
     /**
@@ -162,4 +134,34 @@ public class Compra {
     public void setHoraCompra(LocalTime horaCompra) {
         this.horaCompra = horaCompra;
     }
+
+    /**
+     * @return the idProducto
+     */
+    public int getIdProducto() {
+        return idProducto;
+    }
+
+    /**
+     * @param idProducto the idProducto to set
+     */
+    public void setIdProducto(int idProducto) {
+        this.idProducto = idProducto;
+    }
+
+    /**
+     * @return the idUser
+     */
+    public long getIdUser() {
+        return idUser;
+    }
+
+    /**
+     * @param idUser the idUser to set
+     */
+    public void setIdUser(long idUser) {
+        this.idUser = idUser;
+    }
+    
+ 
 }

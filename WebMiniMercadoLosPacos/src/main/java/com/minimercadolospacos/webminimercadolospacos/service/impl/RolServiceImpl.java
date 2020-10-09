@@ -22,5 +22,20 @@ public class RolServiceImpl implements RolService {
         rolRepository.findAll().forEach(rols::add);
         return rols;
     }
+
+    @Override
+    public void create(Rol rol) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void update(int id, Rol rol) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void delete(int id) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }

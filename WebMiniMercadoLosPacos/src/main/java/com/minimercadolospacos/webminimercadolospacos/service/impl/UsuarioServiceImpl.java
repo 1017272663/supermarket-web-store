@@ -22,4 +22,19 @@ public class UsuarioServiceImpl implements UsuarioService {
         usuarioRepository.findAll().forEach(usuarios::add);
         return usuarios;
     }
+
+    @Override
+    public void create(Usuario usuario) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void update(long id, Usuario usuario) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void delete(long id) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }

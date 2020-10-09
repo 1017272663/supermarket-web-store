@@ -5,5 +5,12 @@ import java.util.List;
 
 
 public interface CompraService {
-           List<Compra> getAll();
+    
+    void create(Compra compra);
+    
+    List<Compra> getAll();
+    
+    void update(int id, Compra compra);
+    
+    void delete(int id);
 }

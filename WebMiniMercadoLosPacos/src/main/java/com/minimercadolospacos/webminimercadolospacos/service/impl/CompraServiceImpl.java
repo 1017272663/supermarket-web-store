@@ -22,5 +22,20 @@ public class CompraServiceImpl implements CompraService {
         compraRepository.findAll().forEach(compras::add);
         return compras;
     }
+
+    @Override
+    public void create(Compra compra) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void update(int id, Compra compra) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void delete(int id) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }

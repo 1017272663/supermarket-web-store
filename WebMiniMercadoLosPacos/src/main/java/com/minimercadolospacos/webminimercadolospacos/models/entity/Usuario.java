@@ -10,16 +10,16 @@ import javax.persistence.Table;
 
 
 @Entity
-@Table(name = "Usuario")
+@Table(name = "usuario")
 public class Usuario{
     
     @Id
-    @Column(name="ID_user")
-    private long idUser;
+    @Column(name="user_id")
+    private long id;
     
       
     @Column(name="nombre_user")
-    private String nombreUser;
+    private String name;
         
          
     @Column(name="apellido_user")
@@ -38,35 +38,35 @@ public class Usuario{
     private String direcionUser;
          
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name="ID_rol")
-    private int idRol;
+    @JoinColumn(name="rol_id")
+    private int rolId;
 
     /**
-     * @return the idUser
+     * @return the id
      */
-    public long getIdUser() {
-        return idUser;
+    public long getId() {
+        return id;
     }
 
     /**
-     * @param idUser the idUser to set
+     * @param id the id to set
      */
-    public void setIdUser(long idUser) {
-        this.idUser = idUser;
+    public void setId(long id) {
+        this.id = id;
     }
 
     /**
-     * @return the nombreUser
+     * @return the name
      */
-    public String getNombreUser() {
-        return nombreUser;
+    public String getName() {
+        return name;
     }
 
     /**
-     * @param nombreUser the nombreUser to set
+     * @param name the name to set
      */
-    public void setNombreUser(String nombreUser) {
-        this.nombreUser = nombreUser;
+    public void setName(String name) {
+        this.name = name;
     }
 
     /**
@@ -140,17 +140,17 @@ public class Usuario{
     }
 
     /**
-     * @return the idRol
+     * @return the rolId
      */
-    public int getIdRol() {
-        return idRol;
+    public int getRolId() {
+        return rolId;
     }
 
     /**
-     * @param idRol the idRol to set
+     * @param rolId the rolId to set
      */
-    public void setIdRol(int idRol) {
-        this.idRol = idRol;
+    public void setRolId(int rolId) {
+        this.rolId = rolId;
     }
                  
 }

@@ -12,8 +12,8 @@ import javax.persistence.Table;
 public class Producto {
         
     @Id
-    @Column(name="ID_producto")
-    private int idProducto;
+    @Column(name="producto_id")
+    private int id;
        
     @Column(name="codigo_barras")
     private long codigoBarras;   
@@ -24,7 +24,7 @@ public class Producto {
     @Column(name="descripcion_producto")
     private String descripcionProducto;
              
-    @Column(name="Imagen_producto")
+    @Column(name="imagen_producto")
     private String imagenProducto;
                    
     @Column(name="precio_unitario")
@@ -34,17 +34,17 @@ public class Producto {
     private int cantidadProducto;
 
     /**
-     * @return the idProducto
+     * @return the id
      */
-    public int getIdProducto() {
-        return idProducto;
+    public int getId() {
+        return id;
     }
 
     /**
-     * @param idProducto the idProducto to set
+     * @param id the id to set
      */
-    public void setIdProducto(int idProducto) {
-        this.idProducto = idProducto;
+    public void setId(int id) {
+        this.id = id;
     }
 
     /**
@@ -130,6 +130,5 @@ public class Producto {
     public void setCantidadProducto(int cantidadProducto) {
         this.cantidadProducto = cantidadProducto;
     }
-    
-    
+
 }

@@ -5,5 +5,12 @@ import java.util.List;
 
 
 public interface ProductoService {
-        List<Producto> getAll();
+    
+    void create(Producto producto);
+    
+    List<Producto> getAll();
+    
+    void update(int id, Producto producto);
+    
+    void delete(int id);
 }

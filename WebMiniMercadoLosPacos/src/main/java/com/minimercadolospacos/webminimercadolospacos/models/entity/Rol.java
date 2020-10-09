@@ -7,43 +7,41 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "Rol")
+@Table(name = "rol")
 public class Rol{
   @Id
-  @Column(name = "ID_rol")
-  private int idRol;
+  @Column(name = "rol_id")
+  private int id;
   
   @Column(name = "nombre_rol")
-  private String nombreRol;
+  private String name;
 
     /**
-     * @return the idRol
+     * @return the id
      */
-    public int getIdRol() {
-        return idRol;
+    public int getId() {
+        return id;
     }
 
     /**
-     * @param idRol the idRol to set
+     * @param id the id to set
      */
-    public void setIdRol(int idRol) {
-        this.idRol = idRol;
+    public void setId(int id) {
+        this.id = id;
     }
 
     /**
-     * @return the nombreRol
+     * @return the name
      */
-    public String getNombreRol() {
-        return nombreRol;
+    public String getName() {
+        return name;
     }
 
     /**
-     * @param nombreRol the nombreRol to set
+     * @param name the name to set
      */
-    public void setNombreRol(String nombreRol) {
-        this.nombreRol = nombreRol;
+    public void setName(String name) {
+        this.name = name;
     }
-  
-  
   
 }
