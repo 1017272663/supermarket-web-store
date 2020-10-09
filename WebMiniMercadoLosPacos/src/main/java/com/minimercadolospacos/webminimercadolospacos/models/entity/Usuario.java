@@ -38,8 +38,8 @@ public class Usuario{
     private String direcionUser;
          
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name="rol_id")
-    private int rolId;
+    @JoinColumn(name = "rol_id")
+    private Rol rolId;
 
     /**
      * @return the id
@@ -142,15 +142,17 @@ public class Usuario{
     /**
      * @return the rolId
      */
-    public int getRolId() {
+    public Rol getRolId() {
         return rolId;
     }
 
     /**
      * @param rolId the rolId to set
      */
-    public void setRolId(int rolId) {
+    public void setRolId(Rol rolId) {
         this.rolId = rolId;
     }
+
+ 
                  
 }

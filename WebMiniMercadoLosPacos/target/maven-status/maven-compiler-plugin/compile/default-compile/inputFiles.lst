@@ -1,21 +1,21 @@
-/home/john/TrabajoGit/SupermMarket Web Store/supermarket-web-store/WebMiniMercadoLosPacos/src/main/java/com/minimercadolospacos/webminimercadolospacos/models/entity/Usuario.java
-/home/john/TrabajoGit/SupermMarket Web Store/supermarket-web-store/WebMiniMercadoLosPacos/src/main/java/com/minimercadolospacos/webminimercadolospacos/service/impl/RolServiceImpl.java
-/home/john/TrabajoGit/SupermMarket Web Store/supermarket-web-store/WebMiniMercadoLosPacos/src/main/java/com/minimercadolospacos/webminimercadolospacos/WebApplicaion.java
-/home/john/TrabajoGit/SupermMarket Web Store/supermarket-web-store/WebMiniMercadoLosPacos/src/main/java/com/minimercadolospacos/webminimercadolospacos/models/repository/CompraRepository.java
-/home/john/TrabajoGit/SupermMarket Web Store/supermarket-web-store/WebMiniMercadoLosPacos/src/main/java/com/minimercadolospacos/webminimercadolospacos/service/iface/ProductoService.java
-/home/john/TrabajoGit/SupermMarket Web Store/supermarket-web-store/WebMiniMercadoLosPacos/src/main/java/com/minimercadolospacos/webminimercadolospacos/models/repository/RolRepository.java
-/home/john/TrabajoGit/SupermMarket Web Store/supermarket-web-store/WebMiniMercadoLosPacos/src/main/java/com/minimercadolospacos/webminimercadolospacos/service/impl/UsuarioServiceImpl.java
-/home/john/TrabajoGit/SupermMarket Web Store/supermarket-web-store/WebMiniMercadoLosPacos/src/main/java/com/minimercadolospacos/webminimercadolospacos/service/impl/ProductoServiceImpl.java
-/home/john/TrabajoGit/SupermMarket Web Store/supermarket-web-store/WebMiniMercadoLosPacos/src/main/java/com/minimercadolospacos/webminimercadolospacos/service/impl/CompraServiceImpl.java
-/home/john/TrabajoGit/SupermMarket Web Store/supermarket-web-store/WebMiniMercadoLosPacos/src/main/java/com/minimercadolospacos/webminimercadolospacos/models/entity/Producto.java
-/home/john/TrabajoGit/SupermMarket Web Store/supermarket-web-store/WebMiniMercadoLosPacos/src/main/java/com/minimercadolospacos/webminimercadolospacos/service/iface/CompraService.java
-/home/john/TrabajoGit/SupermMarket Web Store/supermarket-web-store/WebMiniMercadoLosPacos/src/main/java/com/minimercadolospacos/webminimercadolospacos/controller/CompraController.java
-/home/john/TrabajoGit/SupermMarket Web Store/supermarket-web-store/WebMiniMercadoLosPacos/src/main/java/com/minimercadolospacos/webminimercadolospacos/service/iface/UsuarioService.java
-/home/john/TrabajoGit/SupermMarket Web Store/supermarket-web-store/WebMiniMercadoLosPacos/src/main/java/com/minimercadolospacos/webminimercadolospacos/models/repository/UsuarioRepository.java
-/home/john/TrabajoGit/SupermMarket Web Store/supermarket-web-store/WebMiniMercadoLosPacos/src/main/java/com/minimercadolospacos/webminimercadolospacos/controller/RolController.java
-/home/john/TrabajoGit/SupermMarket Web Store/supermarket-web-store/WebMiniMercadoLosPacos/src/main/java/com/minimercadolospacos/webminimercadolospacos/controller/ProductoController.java
-/home/john/TrabajoGit/SupermMarket Web Store/supermarket-web-store/WebMiniMercadoLosPacos/src/main/java/com/minimercadolospacos/webminimercadolospacos/models/entity/Compra.java
-/home/john/TrabajoGit/SupermMarket Web Store/supermarket-web-store/WebMiniMercadoLosPacos/src/main/java/com/minimercadolospacos/webminimercadolospacos/models/repository/ProductoRepository.java
-/home/john/TrabajoGit/SupermMarket Web Store/supermarket-web-store/WebMiniMercadoLosPacos/src/main/java/com/minimercadolospacos/webminimercadolospacos/models/entity/Rol.java
-/home/john/TrabajoGit/SupermMarket Web Store/supermarket-web-store/WebMiniMercadoLosPacos/src/main/java/com/minimercadolospacos/webminimercadolospacos/service/iface/RolService.java
-/home/john/TrabajoGit/SupermMarket Web Store/supermarket-web-store/WebMiniMercadoLosPacos/src/main/java/com/minimercadolospacos/webminimercadolospacos/controller/UsuarioController.java
+C:\Users\john\Desktop\TrabajosGitweb\supermarket-web-store\WebMiniMercadoLosPacos\src\main\java\com\minimercadolospacos\webminimercadolospacos\controller\UsuarioController.java
+C:\Users\john\Desktop\TrabajosGitweb\supermarket-web-store\WebMiniMercadoLosPacos\src\main\java\com\minimercadolospacos\webminimercadolospacos\service\iface\ProductoService.java
+C:\Users\john\Desktop\TrabajosGitweb\supermarket-web-store\WebMiniMercadoLosPacos\src\main\java\com\minimercadolospacos\webminimercadolospacos\service\impl\CompraServiceImpl.java
+C:\Users\john\Desktop\TrabajosGitweb\supermarket-web-store\WebMiniMercadoLosPacos\src\main\java\com\minimercadolospacos\webminimercadolospacos\models\entity\Compra.java
+C:\Users\john\Desktop\TrabajosGitweb\supermarket-web-store\WebMiniMercadoLosPacos\src\main\java\com\minimercadolospacos\webminimercadolospacos\controller\CompraController.java
+C:\Users\john\Desktop\TrabajosGitweb\supermarket-web-store\WebMiniMercadoLosPacos\src\main\java\com\minimercadolospacos\webminimercadolospacos\models\entity\Usuario.java
+C:\Users\john\Desktop\TrabajosGitweb\supermarket-web-store\WebMiniMercadoLosPacos\src\main\java\com\minimercadolospacos\webminimercadolospacos\WebApplicaion.java
+C:\Users\john\Desktop\TrabajosGitweb\supermarket-web-store\WebMiniMercadoLosPacos\src\main\java\com\minimercadolospacos\webminimercadolospacos\service\impl\RolServiceImpl.java
+C:\Users\john\Desktop\TrabajosGitweb\supermarket-web-store\WebMiniMercadoLosPacos\src\main\java\com\minimercadolospacos\webminimercadolospacos\controller\ProductoController.java
+C:\Users\john\Desktop\TrabajosGitweb\supermarket-web-store\WebMiniMercadoLosPacos\src\main\java\com\minimercadolospacos\webminimercadolospacos\models\repository\ProductoRepository.java
+C:\Users\john\Desktop\TrabajosGitweb\supermarket-web-store\WebMiniMercadoLosPacos\src\main\java\com\minimercadolospacos\webminimercadolospacos\models\entity\Producto.java
+C:\Users\john\Desktop\TrabajosGitweb\supermarket-web-store\WebMiniMercadoLosPacos\src\main\java\com\minimercadolospacos\webminimercadolospacos\service\iface\CompraService.java
+C:\Users\john\Desktop\TrabajosGitweb\supermarket-web-store\WebMiniMercadoLosPacos\src\main\java\com\minimercadolospacos\webminimercadolospacos\service\iface\RolService.java
+C:\Users\john\Desktop\TrabajosGitweb\supermarket-web-store\WebMiniMercadoLosPacos\src\main\java\com\minimercadolospacos\webminimercadolospacos\controller\RolController.java
+C:\Users\john\Desktop\TrabajosGitweb\supermarket-web-store\WebMiniMercadoLosPacos\src\main\java\com\minimercadolospacos\webminimercadolospacos\models\repository\CompraRepository.java
+C:\Users\john\Desktop\TrabajosGitweb\supermarket-web-store\WebMiniMercadoLosPacos\src\main\java\com\minimercadolospacos\webminimercadolospacos\models\repository\UsuarioRepository.java
+C:\Users\john\Desktop\TrabajosGitweb\supermarket-web-store\WebMiniMercadoLosPacos\src\main\java\com\minimercadolospacos\webminimercadolospacos\service\impl\ProductoServiceImpl.java
+C:\Users\john\Desktop\TrabajosGitweb\supermarket-web-store\WebMiniMercadoLosPacos\src\main\java\com\minimercadolospacos\webminimercadolospacos\models\entity\Rol.java
+C:\Users\john\Desktop\TrabajosGitweb\supermarket-web-store\WebMiniMercadoLosPacos\src\main\java\com\minimercadolospacos\webminimercadolospacos\service\iface\UsuarioService.java
+C:\Users\john\Desktop\TrabajosGitweb\supermarket-web-store\WebMiniMercadoLosPacos\src\main\java\com\minimercadolospacos\webminimercadolospacos\models\repository\RolRepository.java
+C:\Users\john\Desktop\TrabajosGitweb\supermarket-web-store\WebMiniMercadoLosPacos\src\main\java\com\minimercadolospacos\webminimercadolospacos\service\impl\UsuarioServiceImpl.java

@@ -45,11 +45,11 @@ public class Compra {
       LocalDateTime - Fecha y Hora*/
    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name="producto_id")
-    private int idProducto;
+    private Producto idProducto;
         
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name="user_id")
-    private long idUser;
+    private Usuario idUser;
 
     /**
      * @return the id
@@ -138,30 +138,30 @@ public class Compra {
     /**
      * @return the idProducto
      */
-    public int getIdProducto() {
+    public Producto getIdProducto() {
         return idProducto;
     }
 
     /**
      * @param idProducto the idProducto to set
      */
-    public void setIdProducto(int idProducto) {
+    public void setIdProducto(Producto idProducto) {
         this.idProducto = idProducto;
     }
 
     /**
      * @return the idUser
      */
-    public long getIdUser() {
+    public Usuario getIdUser() {
         return idUser;
     }
 
     /**
      * @param idUser the idUser to set
      */
-    public void setIdUser(long idUser) {
+    public void setIdUser(Usuario idUser) {
         this.idUser = idUser;
     }
-    
+  
  
 }
