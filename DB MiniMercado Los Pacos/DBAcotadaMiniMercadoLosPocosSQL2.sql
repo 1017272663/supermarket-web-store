@@ -89,10 +89,10 @@ insert into usuario values(15,'juan','piedrahita',3215801024,'juanadminitrador@g
 insert into producto values(1,null,'Leche pasteurisado de 1 Litro',null,'C:\Users\john\Desktop\DB MiniMercado Los Pacos\img\Leche-Colanta-Entera-1000-ml.jpg',2500,2);
 insert into producto values(2,null,'MARGARINA RAMA CULINARIA X 125 GRS',null,'C:\Users\john\Desktop\DB MiniMercado Los Pacos\img\md-Otros-MARGARINAS-MARG-RAMA_125G-CULINARIA-PLAM-1389.jpg',1550.48,10);
 insert into producto values(3,null,'PANELA MOLDE 8UN X 113.5G CARIBE',null,'C:\Users\john\Desktop\DB MiniMercado Los Pacos\img\PANELA_X_8_EL_CARIBE-01.jpg',5450.48,45);
-insert into producto values(4,null,'NESCAFÃ‰ FRASCO X 50GRS',null,'C:\Users\john\Desktop\DB MiniMercado Los Pacos\img\NESCAF__FRASCO_50_GRS',5200,5);
+insert into producto values(4,null,'NESCAFÉ FRASCO X 50GRS',null,'C:\Users\john\Desktop\DB MiniMercado Los Pacos\img\NESCAF__FRASCO_50_GRS',5200,5);
 insert into producto values(5,null,'BLANQUILLO ABURRA X 500 GRS',null,'C:\Users\john\Desktop\DB MiniMercado Los Pacos\img\BLANQUILLO_ABURRA_500_GRS.jpg',2500,8);
 
-insert into producto values(6,null,'MAIZENA FÃ‰CULA X 720 GRS',null,'C:\Users\john\Desktop\DB MiniMercado Los Pacos\img\maizena_fecula_720_grs',15350.48,7);
+insert into producto values(6,null,'MAIZENA FÉCULA X 720 GRS',null,'C:\Users\john\Desktop\DB MiniMercado Los Pacos\img\maizena_fecula_720_grs',15350.48,7);
 insert into producto values(7,null,'GELATINA ROYAL FRESA 40 GR INDIV',null,'C:\Users\john\Desktop\DB MiniMercado Los Pacos\img\GELATINA_ROYAL_FRESA_40_GR_INDIV',1200,2);
 insert into producto values(8,null,'MODIFR. CHOCOLISTO CROCANTE X 500 GRS',null,'C:\Users\john\Desktop\DB MiniMercado Los Pacos\img\CHOCOLISTO_CROCANTE_X_500_GRS.jpg',11850.48,8);
 insert into producto values(9,null,'TOSTADA INTEGRAL JUANCHOPAN 10UN X 16G',null,'C:\Users\john\Desktop\DB MiniMercado Los Pacos\img\TOSTADA_INTEGRAL_JUANCHOPAN_10UN_X_16G.jpg',1950.48,45);
@@ -102,15 +102,15 @@ insert into producto values(11,null,'ACEITE  GURMET 1000 CC N.V',null,'C:\Users\
 insert into producto values(12,null,'CREMA MAGGI MARINERA INDIV C24',null,'C:\Users\john\Desktop\DB MiniMercado Los Pacos\img\7702024007463-1.jpg',2900,60);
 insert into producto values(13,null,'FRUCO SALSA TOM X 400 GRS VIDRIO',null,'C:\Users\john\Desktop\DB MiniMercado Los Pacos\img\FRUCO_SALSA_TOMATE_400_GRS_VIDRIO.jpg',6750.48,70);
 insert into producto values(14,null,'KLIM 1 MIEL FORTIPROTECT X 1 KL',null,'C:\Users\john\Desktop\DB MiniMercado Los Pacos\img\KLIM_1_MIEL_PREBIO_1_KL',31650.47,70);
-insert into producto values(15,null,'SALCHICHAS VIENA ZENÃš PLL. X 150 GRS',null,'C:\Users\john\Desktop\DB MiniMercado Los Pacos\img\salchichas-viena-de-pollo_150.png',3400,12);
+insert into producto values(15,null,'SALCHICHAS VIENA ZENÚ PLL. X 150 GRS',null,'C:\Users\john\Desktop\DB MiniMercado Los Pacos\img\salchichas-viena-de-pollo_150.png',3400,12);
 
 insert into producto values(16,null,'Leche pasteurisado de 1 Litro',null,'C:\Users\john\Desktop\DB MiniMercado Los Pacos\img\Leche-Colanta-Entera-1000-ml.jpg',2500,60);
 insert into producto values(17,null,'MARGARINA RAMA CULINARIA X 125 GRS',null,'C:\Users\john\Desktop\DB MiniMercado Los Pacos\img\md-Otros-MARGARINAS-MARG-RAMA_125G-CULINARIA-PLAM-1389.jpg',1550.48,40);
 insert into producto values(18,null,'PANELA MOLDE 8UN X 113.5G CARIBE',null,'C:\Users\john\Desktop\DB MiniMercado Los Pacos\img\PANELA_X_8_EL_CARIBE-01.jpg',5450.48,30);
-insert into producto values(19,null,'NESCAFÃ‰ FRASCO X 50GRS',null,'C:\Users\john\Desktop\DB MiniMercado Los Pacos\img\NESCAF__FRASCO_50_GRS',5200,45);
+insert into producto values(19,null,'NESCAFÉ FRASCO X 50GRS',null,'C:\Users\john\Desktop\DB MiniMercado Los Pacos\img\NESCAF__FRASCO_50_GRS',5200,45);
 insert into producto values(20,null,'BLANQUILLO ABURRA X 500 GRS',null,'C:\Users\john\Desktop\DB MiniMercado Los Pacos\img\BLANQUILLO_ABURRA_500_GRS.jpg',2500,36);
 
-insert into producto values(21,null,'MAIZENA FÃ‰CULA X 720 GRS',null,'C:\Users\john\Desktop\DB MiniMercado Los Pacos\img\maizena_fecula_720_grs',15350.48,78);
+insert into producto values(21,null,'MAIZENA FÉCULA X 720 GRS',null,'C:\Users\john\Desktop\DB MiniMercado Los Pacos\img\maizena_fecula_720_grs',15350.48,78);
 insert into producto values(22,null,'GELATINA ROYAL FRESA 40 GR INDIV',null,'C:\Users\john\Desktop\DB MiniMercado Los Pacos\img\GELATINA_ROYAL_FRESA_40_GR_INDIV',1200,90);
 insert into producto values(23,null,'MODIFR. CHOCOLISTO CROCANTE X 500 GRS',null,'C:\Users\john\Desktop\DB MiniMercado Los Pacos\img\CHOCOLISTO_CROCANTE_X_500_GRS.jpg',11850.48,75);
 insert into producto values(24,null,'TOSTADA INTEGRAL JUANCHOPAN 10UN X 16G',null,'C:\Users\john\Desktop\DB MiniMercado Los Pacos\img\TOSTADA_INTEGRAL_JUANCHOPAN_10UN_X_16G.jpg',1950.48,45);
@@ -120,7 +120,7 @@ insert into producto values(26,null,'ACEITE  URMET 1000 CC N.V',null,'C:\Users\j
 insert into producto values(27,null,'CREMA MAGGI MARINERA INDIV C24',null,'C:\Users\john\Desktop\DB MiniMercado Los Pacos\img\7702024007463-1.jpg',2900,15);
 insert into producto values(28,null,'FRUCO SALSA TOM X 400 GRS VIDRIO',null,'C:\Users\john\Desktop\DB MiniMercado Los Pacos\img\FRUCO_SALSA_TOMATE_400_GRS_VIDRIO.jpg',6750.48,32);
 insert into producto values(29,null,'KLIM 1 MIEL FORTIPROTECT X 1 KL',null,'C:\Users\john\Desktop\DB MiniMercado Los Pacos\img\KLIM_1_MIEL_PREBIO_1_KL',31650.47,74);
-insert into producto values(30,null,'SALCHICHAS VIENA ZENÃš PLL. X 150 GRS',null,'C:\Users\john\Desktop\DB MiniMercado Los Pacos\img\salchichas-viena-de-pollo_150.png',3400,95);
+insert into producto values(30,null,'SALCHICHAS VIENA ZENÚ PLL. X 150 GRS',null,'C:\Users\john\Desktop\DB MiniMercado Los Pacos\img\salchichas-viena-de-pollo_150.png',3400,95);
 
 /*------------------------------------------------------------------------------------------------------------------------------------*/
 

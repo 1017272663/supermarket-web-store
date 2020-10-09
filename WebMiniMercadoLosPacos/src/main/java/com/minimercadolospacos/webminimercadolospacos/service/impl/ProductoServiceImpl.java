@@ -5,6 +5,7 @@ import com.minimercadolospacos.webminimercadolospacos.models.repository.Producto
 import com.minimercadolospacos.webminimercadolospacos.service.iface.ProductoService;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -23,16 +24,30 @@ public class ProductoServiceImpl implements ProductoService{
 
     @Override
     public void create(Producto producto) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        productoRepository.save(producto);
     }
 
     @Override
     public void update(int id, Producto producto) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+        
+        Optional<Producto> existsProducto = productoRepository.findById(id);
+        if (existsProducto.isPresent()) {
+            existsProducto.get().setId(producto.getId());
+            existsProducto.get().setCodigoBarras(producto.getCodigoBarras());
+            existsProducto.get().setNombreProducto(producto.getNombreProducto());
+            existsProducto.get().setDescripcionProducto(producto.getDescripcionProducto());
+            existsProducto.get().setImagenProducto(producto.getImagenProducto());
+            existsProducto.get().setPrecioUnitario(producto.getPrecioUnitario());
+            existsProducto.get().setCantidadProducto(producto.getCantidadProducto());
+            productoRepository.save(existsProducto.get());// ademas de insertar tambien sirve para actualizar si el id ya existe.
+        }    }
 
     @Override
     public void delete(int id) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+   Optional<Producto> existsProducto = productoRepository.findById(id);
+        if (existsProducto.isPresent()) {
+            productoRepository.delete(existsProducto.get());    
+        }
+
     }
 }

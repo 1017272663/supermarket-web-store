@@ -21,7 +21,10 @@ public class UsuarioController {
     private UsuarioService usuarioService;
     
     // HTTP -> GET, POST, PUT, DELETE
-    
+    //Get=traer datos consultas
+    //Post 0 me permite realisar todos los vervos pero lo utilisaremos apra crear
+    //Put = sirve para actualizar
+    //Delete = Sirve para elimimar
     @GetMapping
     public List<Usuario> getAll() {
         return usuarioService.getAll();
