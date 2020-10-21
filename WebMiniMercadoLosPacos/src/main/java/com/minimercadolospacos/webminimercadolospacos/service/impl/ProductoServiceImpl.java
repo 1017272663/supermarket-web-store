@@ -33,7 +33,6 @@ public class ProductoServiceImpl implements ProductoService{
         Optional<Producto> existsProducto = productoRepository.findById(id);
         if (existsProducto.isPresent()) {
             existsProducto.get().setId(producto.getId());
-            existsProducto.get().setCodigoBarras(producto.getCodigoBarras());
             existsProducto.get().setNombreProducto(producto.getNombreProducto());
             existsProducto.get().setDescripcionProducto(producto.getDescripcionProducto());
             existsProducto.get().setImagenProducto(producto.getImagenProducto());

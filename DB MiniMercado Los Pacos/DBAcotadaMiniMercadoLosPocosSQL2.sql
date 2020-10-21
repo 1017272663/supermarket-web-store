@@ -41,7 +41,7 @@ pedido_id int not null auto_increment,
 total_compra decimal not null,
 total_descuento decimal not null,
 cantidad_productos decimal NOT null,
-fecha_compra datetime not null,
+fecha_compra date not null,
 hora_compra time not null,
 producto_id int not null,
 user_id bigInt not null,
@@ -83,9 +83,8 @@ insert into usuario values(15,'juan','piedrahita',3215801024,'juanadminitrador@g
 /* ------------------------------------------------------------------------------------------------------------------------*/
 
 
-
 /*---------------------------------------------------------------------------------------------- producto --------------------------------------------------------------------------------------------------------------------*/
-insert into producto values(1,'Leche pasteurisado de 1 Litro','null','C:\Users\john\Desktop\DB MiniMercado Los Pacos\img\Leche-Colanta-Entera-1000-ml.jpg',2500,2);
+insert into producto values(1,'Leche pasteurisado de 1 Litro','null','C:\Users\john\Desktop\DB MiniMercado Los Pacos\img\Leche-Colanta-Entera-1000-ml.jpg',2500,100);
 insert into producto values(2,'MARGARINA RAMA CULINARIA X 125 GRS','null','C:\Users\john\Desktop\DB MiniMercado Los Pacos\img\md-Otros-MARGARINAS-MARG-RAMA_125G-CULINARIA-PLAM-1389.jpg',1550.48,10);
 insert into producto values(3,'PANELA MOLDE 8UN X 113.5G CARIBE','null','C:\Users\john\Desktop\DB MiniMercado Los Pacos\img\PANELA_X_8_EL_CARIBE-01.jpg',5450.48,45);
 insert into producto values(4,'NESCAFÉ FRASCO X 50GRS','null','C:\Users\john\Desktop\DB MiniMercado Los Pacos\img\NESCAF__FRASCO_50_GRS',5200,5);
@@ -121,6 +120,15 @@ insert into producto values(29,'KLIM 1 MIEL FORTIPROTECT X 1 KL',null,'C:\Users\
 insert into producto values(30,'SALCHICHAS VIENA ZENÚ PLL. X 150 GRS',null,'C:\Users\john\Desktop\DB MiniMercado Los Pacos\img\salchichas-viena-de-pollo_150.png',3400,95);
 */
 /*------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*---------------------------------------------------------------Compra---------------------------------------------------------------------*/
+insert into compra(total_compra,total_descuento,cantidad_productos,Fecha_compra,Hora_compra,producto_id,user_id) values(1000,5,1,CURDATE(),NOW(),1,1);
+insert into compra(total_compra,total_descuento,cantidad_productos,Fecha_compra,Hora_compra,producto_id,user_id) values(1000,5,1,CURDATE(),NOW(),1,1);
+insert into compra(total_compra,total_descuento,cantidad_productos,Fecha_compra,Hora_compra,producto_id,user_id) values(1000,5,1,CURDATE(),NOW(),1,1);
+
+
+
+
 
 select * from producto;
 select * from rol;

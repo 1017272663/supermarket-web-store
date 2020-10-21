@@ -32,7 +32,7 @@ public class UsuarioServiceImpl implements UsuarioService {
     public void create(Usuario usuario) {
        Optional<Rol> rol = rolRepository.findById(usuario.getRolId().getId());
         if (rol.isPresent()) {
-            usuarioRepository.save(usuario);// crea o inferta la informacion con los datos que se le pasan pr medio de usuario
+            usuarioRepository.save(usuario);// crea o inferta la informacion con los datos que se le pasan por medio de usuario
         }
     }
 

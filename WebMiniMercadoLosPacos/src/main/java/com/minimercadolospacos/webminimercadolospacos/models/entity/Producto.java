@@ -14,9 +14,6 @@ public class Producto {
     @Id
     @Column(name="producto_id")
     private int id;
-       
-    @Column(name="codigo_barras")
-    private long codigoBarras;   
          
     @Column(name="nombre_producto")
     private String nombreProducto;
@@ -45,20 +42,6 @@ public class Producto {
      */
     public void setId(int id) {
         this.id = id;
-    }
-
-    /**
-     * @return the codigoBarras
-     */
-    public long getCodigoBarras() {
-        return codigoBarras;
-    }
-
-    /**
-     * @param codigoBarras the codigoBarras to set
-     */
-    public void setCodigoBarras(long codigoBarras) {
-        this.codigoBarras = codigoBarras;
     }
 
     /**
