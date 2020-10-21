@@ -34,7 +34,7 @@ public class RolServiceImpl implements RolService {
     public void update(int id, Rol rol) {
    Optional<Rol> existsRol = rolRepository.findById(id);
         if (existsRol.isPresent()) {  
-            existsRol.get().setId(rol.getId());
+           // existsRol.get().setId(rol.getId());
             existsRol.get().setName(rol.getName());
          rolRepository.save(existsRol.get());// ademas de insertar tambien sirve para actualizar si el id ya existe.
         }

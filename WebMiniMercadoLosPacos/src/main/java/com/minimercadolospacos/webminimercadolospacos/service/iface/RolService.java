@@ -5,6 +5,7 @@ import java.util.List;
 
 
 public interface RolService {
+    
     void create(Rol rol);
         
     List<Rol> getAll();
