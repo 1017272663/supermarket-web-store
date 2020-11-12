@@ -2,6 +2,7 @@ import {AxiosInstance} from "../config/axios-config"
 class  ProductoService{
     get(){
         return AxiosInstance.get("producto");
+   
     }
 }
 

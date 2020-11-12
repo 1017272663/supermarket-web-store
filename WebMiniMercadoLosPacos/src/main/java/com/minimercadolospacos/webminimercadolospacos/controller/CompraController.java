@@ -4,6 +4,7 @@ import com.minimercadolospacos.webminimercadolospacos.models.entity.Compra;
 import com.minimercadolospacos.webminimercadolospacos.service.iface.CompraService;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -15,6 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/compra")
+@CrossOrigin("*")
 public class CompraController {
       @Autowired
     private CompraService compraService;

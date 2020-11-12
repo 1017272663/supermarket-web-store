@@ -11,10 +11,6 @@ import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 
 function App() {
   return(
-
-    header('Access-Control-Allow-Origin: *');
-header('Access-Control-Allow-Methods: POST, GET, OPTIONS, PUT, DELETE');
-header('Access-Control-Allow-Headers: Content-Type, X-Auth-Token, Origin, Authorization');
      <Router>
       <Navbar bg="light" expand="lg">
       <Navbar.Brand href="#home">Este es el Menu</Navbar.Brand>
