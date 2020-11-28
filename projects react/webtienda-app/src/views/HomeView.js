@@ -1,40 +1,99 @@
 import React, {useState, useEffect} from "react";
-import UsuarioService from "../services/UsuarioService";
-import axios from "axios";
+import ProductoService from "../services/ProductoService";
+import {Row, Col, Container, CardDeck} from 'react-bootstrap';
+import CardProducto from '../components/CardProducto';
+import Swal from "sweetalert2";
 
 const HomeView = () => {
 
 
  
-   const[usuarios, setUsuarios] = useState(null);
+   const[producto, setProducto] = useState(null);
  
     useEffect(() => {
-        handleGetUsuario();
+        handleGetProducto();
     }, []);
 
 
-    const handleGetUsuario = async () => {
+    const handleGetProducto = async () => {
+        
         try{
-          
-            const resp=  await UsuarioService.get();
- 
-            //const resp= [{"id":1,"name":"sabina","apellidoUser":"gonzales","telefonoUser":3215801010,"correo":"sabina@gmail.com","contrasenia":"123","direcionUser":"calle 1 carrera 1","rolId":{"id":1,"name":"Cliente"}},{"id":2,"name":"salme","apellidoUser":"herrera","telefonoUser":3215801011,"correo":"salomo726@gmail.com","contrasenia":"123","direcionUser":"calle 2 carreara 5","rolId":{"id":1,"name":"Cliente"}},{"id":3,"name":"salomon","apellidoUser":"almeida","telefonoUser":3215801012,"correo":"salomo716@gmail.com","contrasenia":"123","direcionUser":"calle 3 carrera 9","rolId":{"id":1,"name":"Cliente"}},{"id":4,"name":"samantha","apellidoUser":"sanchez","telefonoUser":3215801013,"correo":"salomo746@gmail.com","contrasenia":"123","direcionUser":"calle 3 carrera 9","rolId":{"id":1,"name":"Cliente"}},{"id":5,"name":"samuel","apellidoUser":"garzon","telefonoUser":3215801014,"correo":"samuelsalud158@saludpet.v.co","contrasenia":"123","direcionUser":"calle 5 carrera 8","rolId":{"id":1,"name":"Cliente"}},{"id":6,"name":"sara","apellidoUser":"alvarez","telefonoUser":3215801015,"correo":"sara243@hotmai.com","contrasenia":"123","direcionUser":"calle 8 carrera 1","rolId":{"id":1,"name":"Cliente"}},{"id":7,"name":"napoleon","apellidoUser":"piedrahita","telefonoUser":3215801016,"correo":"salomo748@gmail.com","contrasenia":"123","direcionUser":"calle 9 carrera 9","rolId":{"id":1,"name":"Cliente"}},{"id":8,"name":"john","apellidoUser":"nzales","telefonoUser":3215801017,"correo":"LaParka@quenotepille.ric.co","contrasenia":"123","direcionUser":"calle 20 carrera 45","rolId":{"id":1,"name":"Cliente"}},{"id":9,"name":"pedro","apellidoUser":"Guzman","telefonoUser":3215801018,"correo":"pedro.adasd@hotmai.com","contrasenia":"123","direcionUser":"calle 21 carrera 69","rolId":{"id":1,"name":"Cliente"}},{"id":10,"name":"alicia","apellidoUser":"montreal","telefonoUser":3215801019,"correo":"salomo746@gmail.com","contrasenia":"123","direcionUser":"calle 22 carrera 98","rolId":{"id":2,"name":"Vendedor"}},{"id":11,"name":"carla","apellidoUser":"jaramillo","telefonoUser":3215801020,"correo":"salomo946@gmail.com","contrasenia":"123","direcionUser":"calle 23 carrera 63","rolId":{"id":2,"name":"Vendedor"}},{"id":12,"name":"jesus","apellidoUser":"alcasares","telefonoUser":3215801021,"correo":"jesus@teama.edu.co","contrasenia":"123","direcionUser":"calle 29 carrera 64","rolId":{"id":2,"name":"Vendedor"}},{"id":13,"name":"juan","apellidoUser":"Alvarez","telefonoUser":3215801022,"correo":"salomo746@gmail.com","contrasenia":"123","direcionUser":"calle 30 carrera 11","rolId":{"id":2,"name":"Vendedor"}},{"id":14,"name":"sara","apellidoUser":"nzales","telefonoUser":3215801023,"correo":"sara243@hotmai.com","contrasenia":"123","direcionUser":"calle 8 carrera 1","rolId":{"id":3,"name":"Administrador"}},{"id":15,"name":"juan","apellidoUser":"piedrahita","telefonoUser":3215801024,"correo":"juanadminitrador@gmail.com","contrasenia":"123","direcionUser":"calle 32 carrera 12","rolId":{"id":3,"name":"Administrador"}}];
-            console.log(resp)
-            setUsuarios(resp.data)
+            Swal.fire({
+                allowOutsideClick: false,
+                icon: 'info',
+                text: 'Por favor espere...',
+                timer: 1000
+            })
+    
+            Swal.showLoading();
+
+            const resp=  await ProductoService.get();
+            setProducto(resp.data)
+           // Swal.close()
         }catch(error){
             console.log(error);
+            Swal.close()
+            Swal.fire({
+                allowOutsideClick: false,
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Se a presentado un error a la hora de listar los productos', 
+            })
         }
     }
 
-    return <div>{
-        <p>{
-            usuarios && usuarios.map((usuario, index) =>{
-            return <li key={index}>{usuario.name}</li>
-            })
-        }</p>
-    }</div>
 
-  //  return <div>Estoy en home</div>
+    const handleDeleteProducto = (id) =>{
+        ProductoService.delete(id).then(resp =>{
+            console.log(resp);
+            handleGetProducto();
+        }, (err) =>{
+            console.log('Error al eliminar', err);
+        });
+    }
+
+    const handleRenderProducto = () =>{
+        if (!producto || producto.length ===0){
+            return <div>No existen datos </div>;
+        }
+
+        const colums= 4;
+
+        let rows = Math.floor(producto.length / colums);
+        const resto = producto.length % colums;
+        if(resto !==0){
+            rows = rows + 1; 
+        }
+
+        const arrayRows = [...Array(rows)];
+        return arrayRows.map((row, index) => {
+            return(
+                <CardDeck key={index}>
+                    {
+                        producto.slice(
+                            index === 0 ? index : index * colums,
+                            index === 0 ? colums : index * colums + colums
+                        ).map((producto, index) => {
+                            return <CardProducto
+                            key={index}
+                            id={producto.id}
+                            image = {producto.imagenProducto}
+                            name ={producto.nombreProducto}
+                            handleDeleteProducto={handleDeleteProducto}/>
+                        })
+                    }
+                </CardDeck>
+            );
+        });
+    }
+
+
+    return(
+        <Container> 
+            {handleRenderProducto()}
+        </Container>
+    );
+
 }
 
 export default HomeView;
